@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жаратылыстану 1-ші сынып</title>
+    <link rel="stylesheet" href="C:\Users\user\Desktop\Diploma work\Shabyt\1class\jarat1.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Жаратылыстану 1-ші сынып</h1>
+        <p>Барлық жаратылыстану сабақтарға арналған YouTube видеолар</p>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Сабақты іздеу..." onkeyup="filterLessons()">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Lessons Section -->
+        <section class="lessons-section">
+            <h2>Сабақтар тізімі</h2>
+            <div class="lesson-grid">
+                <!-- Lesson 1 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=0O2LvcHOnqA&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=2')">
+                    <h3>Сабақ 1</h3>
+                    <p>Заттарды санау.</p>
+                </div>
+                <!-- Lesson 2 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=PRSSSScz4ec&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=3')">
+                    <h3>Сабақ 2</h3>
+                    <p>Заттар тобын салыстыру.</p>
+                </div>
+                <!-- Lesson 3 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=UXgD4nuTJjY&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=4')">
+                    <h3>Сабақ 3</h3>
+                    <p>1 саны және цифры.</p>
+                </div>
+                <!-- Lesson 4 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=VtIV8o_2744&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=5')">
+                    <h3>Сабақ 4</h3>
+                    <p>2 саны және цифры.</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=0O2LvcHOnqA&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=2')">
+                    <h3>Сабақ 5</h3>
+                    <p>Заттарды санау.</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=PRSSSScz4ec&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=3')">
+                    <h3>Сабақ 6</h3>
+                    <p>Заттар тобын салыстыру.</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=UXgD4nuTJjY&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=4')">
+                    <h3>Сабақ 7</h3>
+                    <p>Цифрлар</p>
+                </div>
+                <!-- Lesson 8 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=VtIV8o_2744&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=5')">
+                    <h3>Сабақ 8</h3>
+                    <p>2 санының құрамы.</p>
+                </div>
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=0O2LvcHOnqA&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=2')">
+                    <h3>Сабақ 9</h3>
+                    <p>Заттарды санау.</p>
+                </div>
+                <!-- Lesson 2 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=PRSSSScz4ec&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=3')">
+                    <h3>Сабақ 10</h3>
+                    <p>Заттар тобын салыстыру.</p>
+                </div>
+                <!-- Lesson 3 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=UXgD4nuTJjY&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=4')">
+                    <h3>Сабақ 11</h3>
+                    <p>1 саны және цифры.</p>
+                </div>
+                <!-- Lesson 4 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=VtIV8o_2744&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=5')">
+                    <h3>Сабақ 12</h3>
+                    <p>2 саны және цифры.</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=0O2LvcHOnqA&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=2')">
+                    <h3>Сабақ 13</h3>
+                    <p>Заттарды санау.</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=PRSSSScz4ec&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=3')">
+                    <h3>Сабақ 14</h3>
+                    <p>Заттар тобын салыстыру.</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=UXgD4nuTJjY&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=4')">
+                    <h3>Сабақ 15</h3>
+                    <p>Цифрлар</p>
+                </div>
+                <!-- Lesson 8 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=VtIV8o_2744&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=5')">
+                    <h3>Сабақ 16</h3>
+                    <p>2 санының құрамы.</p>
+                </div>
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=0O2LvcHOnqA&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=2')">
+                    <h3>Сабақ 17</h3>
+                    <p>Заттарды санау.</p>
+                </div>
+                <!-- Lesson 2 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=PRSSSScz4ec&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=3')">
+                    <h3>Сабақ 18</h3>
+                    <p>Заттар тобын салыстыру.</p>
+                </div>
+                <!-- Lesson 3 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=UXgD4nuTJjY&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=4')">
+                    <h3>Сабақ 19</h3>
+                    <p>1 саны және цифры.</p>
+                </div>
+                <!-- Lesson 4 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=VtIV8o_2744&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=5')">
+                    <h3>Сабақ 20</h3>
+                    <p>2 саны және цифры.</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=0O2LvcHOnqA&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=2')">
+                    <h3>Сабақ 21</h3>
+                    <p>Заттарды санау.</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=PRSSSScz4ec&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=3')">
+                    <h3>Сабақ 22</h3>
+                    <p>Заттар тобын салыстыру.</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=UXgD4nuTJjY&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=4')">
+                    <h3>Сабақ 23</h3>
+                    <p>Цифрлар</p>
+                </div>
+                <!-- Lesson 8 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=VtIV8o_2744&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=5')">
+                    <h3>Сабақ 24</h3>
+                    <p>2 санының құрамы.</p>
+                </div>
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=VtIV8o_2744&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=5')">
+                    <h3>Сабақ 25</h3>
+                    <p>2 саны және цифры.</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=0O2LvcHOnqA&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=2')">
+                    <h3>Сабақ 26</h3>
+                    <p>Заттарды санау.</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=PRSSSScz4ec&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=3')">
+                    <h3>Сабақ 27</h3>
+                    <p>Заттар тобын салыстыру.</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=UXgD4nuTJjY&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=4')">
+                    <h3>Сабақ 28</h3>
+                    <p>Цифрлар</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=0O2LvcHOnqA&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=2')">
+                    <h3>Сабақ 29</h3>
+                    <p>Заттарды санау.</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=PRSSSScz4ec&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=3')">
+                    <h3>Сабақ 30</h3>
+                    <p>Заттар тобын салыстыру.</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=UXgD4nuTJjY&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=4')">
+                    <h3>Сабақ 31</h3>
+                    <p>Цифрлар</p>
+                </div>
+                <!-- Lesson 8 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=VtIV8o_2744&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=5')">
+                    <h3>Сабақ 32</h3>
+                    <p>2 санының құрамы.</p>
+                </div>
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=VtIV8o_2744&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=5')">
+                    <h3>Сабақ 33</h3>
+                    <p>2 саны және цифры.</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=0O2LvcHOnqA&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=2')">
+                    <h3>Сабақ 34</h3>
+                    <p>Заттарды санау.</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=PRSSSScz4ec&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=3')">
+                    <h3>Сабақ 35</h3>
+                    <p>Заттар тобын салыстыру.</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=UXgD4nuTJjY&list=PLG_21lBvmeGyzRiB_kyqMUpCW6LonRUNp&index=4')">
+                    <h3>Сабақ 36</h3>
+                    <p>Цифрлар</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Logo and Description -->
+        <div class="footer-section">
+            <a href="#" class="logo">Sha<span>byt</span></a>
+            <p>Біз балаларға математиканы оңай үйрену үшін осы платформаны жасадық.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Жылдам Сілтемелер</h3>
+            <ul>
+                <li><a href="#">Басты бет</a></li>
+                <li><a href="#">Сабақтар</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакт</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-section">
+            <h3>Байланыс</h3>
+            <p><i class='bx bx-map'></i> Алматы, Қазақстан</p>
+            <p><i class='bx bx-phone'></i> +7 777 777 77 77</p>
+            <p><i class='bx bx-envelope'></i> info@shabyt.com</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+            <h3>Бізбен байланысу</h3>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Shabyt. Барлық құқықтар қорғалған.</p>
+    </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script src="C:\Users\user\Desktop\Diploma work\Shabyt\1class\jarat1.js"></script>
+</body>
+</html>
